@@ -11,55 +11,55 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-    //  All configuration goes here 
+   
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        //  Concatinate all JS files
+     
         concat: {
-            //  Configuration for concatinating files goes here.
+           
             vendor: {
                 src: [
                     'bower_components/what-input/what-input.js',
-                    'bower_components/jquery/dist/jquery.js',                   // Import jQuery
-                    'bower_components/foundation-sites/dist/foundation.js',             //Import Foundation JS
+                    'bower_components/jquery/dist/jquery.js',                   
+                    'bower_components/foundation-sites/dist/foundation.js',             
        
                 ],
                 dest: 'src/js/build/vendor.js',
             },
             main: {
                 src: [
-                    'src/js/main.js'  // This specific file
+                    'src/js/main.js'  
                 ],
                 dest: 'src/js/build/main.js',
             }
         },
 
-        //  Minify all JS files
+       ]
         uglify: {
             vendor: {
-                src: 'src/js/build/vendor.js',      //change this...
-                dest: 'dist/js/vendor.min.js'  //...to this minified version
+                src: 'src/js/build/vendor.js',     
+                dest: 'dist/js/vendor.min.js'  
             },
             main: {
-                src: 'src/js/build/main.js',      //change this...
-                dest: 'dist/js/main.min.js'  //...to this minified version
+                src: 'src/js/build/main.js',      
+                dest: 'dist/js/main.min.js'  
             },
-            //modernizr is separate as is called in the <head>
+         
             modernizr: {
-                src: 'bower_components/modernizr/modernizr.js',      //change this...
-                dest: 'dist/js/modernizr.min.js'  //...to this minified version
+                src: 'bower_components/modernizr/modernizr.js',      
+                dest: 'dist/js/modernizr.min.js'  
             }
         },
 
-        //  Optimise all PNG/JPG/GIF images
+  
         imagemin: {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'src/img/',         //image directory
-                    src: ['**/*.{png,jpg,gif}'],    //these filetypes
-                    dest: 'dist/img/'      //destination for optimised images
+                    cwd: 'src/img/',         
+                    src: ['**/*.{png,jpg,gif}'],    
+                    dest: 'dist/img/'      
                 }]
             }
         },
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 
         sass: {
             dist: {
-                options: {                       // Target options
+                options: {                      
                     style: 'compressed'
                     },
                 files: {
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
 
 
 
-        // Watch for specific file changes
+        
         watch: {
             // options: {
             //     livereload: true,   //refresh the browser on change
@@ -105,11 +105,11 @@ module.exports = function(grunt) {
                 files: ['src/js/*.js'],
                 tasks: ['concat', 'uglify,'],
                 options: {
-                    spawn: false,                   //what even is this?!?!
+                    spawn: false,                   
                     livereload: true
                 },
             } ,
-            //  watch for SCSS changes
+           
             css: {
                 files: ['src/scss/*.scss'],
                 tasks: ['sass'],
