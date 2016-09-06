@@ -1,0 +1,15 @@
+{
+  "name": "foundation6-grunt-template",
+  "author": "Matt Beard <mattbeard.co.uk>",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.0"
+  }
+}

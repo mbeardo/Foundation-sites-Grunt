@@ -1,0 +1,4 @@
+// Custom JS
+
+$(document).foundation();
+
