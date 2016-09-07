@@ -18,6 +18,5 @@
     "modernizr": "~2.8.3",
     "foundation-sites": "~6.2.0",
     "what-input": "~1.1.4",
-    "es6-promise": "~3.2.2"
   }
 }
