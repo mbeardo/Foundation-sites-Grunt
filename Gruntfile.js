@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             }
         },
 
-       ]
+       
         uglify: {
             vendor: {
                 src: 'src/js/build/vendor.js',     
