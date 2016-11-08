@@ -103,7 +103,7 @@ module.exports = function(grunt) {
             //  watch for JS changes
             scripts: {
                 files: ['src/js/*.js'],
-                tasks: ['concat', 'uglify,'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,                   
                     livereload: true
