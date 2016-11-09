@@ -97,9 +97,9 @@ module.exports = function(grunt) {
 
         
         watch: {
-            // options: {
-            //     livereload: true,   //refresh the browser on change
-            // },
+            options: {
+                livereload: true,   //refresh the browser on change
+            },
             //  watch for JS changes
             scripts: {
                 files: ['src/js/*.js'],
@@ -125,11 +125,11 @@ module.exports = function(grunt) {
                     spawn: false,
                     livereload: true
                 }
+            },
+            livereload: {
+                options: { livereload: true },
+                files: ['*/*'],
             }
-            // livereload: {
-            //     options: { livereload: true },
-            //     files: ['*/*'],
-            // },
 
 
 
