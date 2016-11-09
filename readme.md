@@ -16,6 +16,9 @@
 * Run `$ grunt` to create production/build versions of js/css
 * Run `$ grunt watch` to compile
 
+*Uses live reload (https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)*
+
+
 
 
 
